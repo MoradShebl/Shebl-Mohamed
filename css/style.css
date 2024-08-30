@@ -3,6 +3,7 @@
     padding: 0px;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 :root {
@@ -264,6 +265,15 @@ nav ul li a {
 
     .biodiv {
         max-height: 65vh !important;
+    }
+
+    footer .navvv ul li a {
+    font-size: 0.5em !important;
+    }
+
+    .fff p
+    {
+        font-size: 0.6em !important;
     }
 }
 
@@ -933,7 +943,7 @@ nav ul li a {
 footer {
     width: 100%;
     height: 300px;
-    background-color: #000000;
+    background-color: var(--main);
     z-index: 1;
     display: flex;
     flex-direction: column;
@@ -1024,14 +1034,14 @@ footer .navvv ul li:hover a {
 }
 
 .fff p a {
-    background-color: #ffffff;
-    color: #000000;
+    background-color: var(--second);
+    color: var(--main);
     transition: all 0.5s cubic-bezier(1, -0.01, 0, 1.02);
 }
 
 .fff p a:hover {
-    background-color: #000000;
-    color: #ffffff;
+    background-color: var(--main);
+    color: var(--hov);
 }
 
 ::selection {
