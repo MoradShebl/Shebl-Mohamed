@@ -1,7 +1,7 @@
-window.onload = function() {
-    window.scrollTo(0, 0);
-    hidul.style.display = 'inline';
-}
+// window.onload = function() {
+//     window.scrollTo(0, 0);
+//     hidul.style.display = 'inline';
+// }
 
 document.addEventListener('DOMContentLoaded', function() {
     const checkbox = document.getElementById('check');
