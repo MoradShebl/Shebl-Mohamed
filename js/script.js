@@ -3,14 +3,14 @@
 //     hidul.style.display = 'inline';
 // }
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const checkbox = document.getElementById('check');
     const checkbtn = document.getElementById('checkbtn1');
     const header = document.getElementById('header');
     const hidul = document.getElementById('hidul');
     const listItems = header.querySelectorAll('li');
 
-    checkbox.addEventListener('change', function() {
+    checkbox.addEventListener('change', function () {
         if (this.checked) {
             header.style.height = '500px';
             listItems.forEach(li => {
@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    checkbox.addEventListener('change', function() {
+    checkbox.addEventListener('change', function () {
         if (this.checked) {
             checkbtn.style.rotate = '-90deg';
         } else {
@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    checkbox.addEventListener('change', function() {
+    checkbox.addEventListener('change', function () {
         if (this.checked) {
             hidul.style.display = 'block';
         } else {
