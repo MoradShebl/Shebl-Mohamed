@@ -665,11 +665,12 @@ nav ul li a {
     background-color: var(--second);
     border-radius: 10% 10% 10% 10%;
     display: flex;
-    align-items: center;
     flex-direction: column;
     height: auto;
+    flex-wrap: wrap;
     align-content: center;
-    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .ex span {
@@ -736,6 +737,7 @@ nav ul li a {
 
 .explc_content h3 {
     font-size: 1.6em;
+    text-align: center;
 }
 
 .explc img {
@@ -872,7 +874,7 @@ nav ul li a {
     align-content: center;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     background-color: #ffffff;
 }
 
@@ -968,6 +970,21 @@ footer {
     border-radius: 10% 10% 10% 10%;
 }
 
+.echcontainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.echcontainer .explc{
+    width: 375px;
+    height: 375px;
+    margin-left: 20px;
+}
+
 .explc_content p {
     text-align: center;
     font-size: 2em;
@@ -1047,4 +1064,41 @@ footer .navvv ul li:hover a {
 ::selection {
     background-color: var(--main);
     color: var(--second);
+}
+
+.blur{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(135deg, Orgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    color: black;
+    position: fixed;
+    z-index: 99;
+    display: none;
+    opacity: 0;
+}
+
+.header:hover .blur {
+    display: block !important;
+}
+
+@keyframes blur {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes stopblur {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }
